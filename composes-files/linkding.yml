@@ -6,9 +6,9 @@ services:
     ports:
       - 9090:9090
     volumes:
-      - data:/etc/linkding/data
+      - datalink:/etc/linkding/data
     restart: unless-stopped
 
 
 volumes: 
-    data
+    datalink
