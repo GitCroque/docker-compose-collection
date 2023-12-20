@@ -5,6 +5,8 @@ services:
   linkstack:
     hostname: 'linkstack'
     image: 'linkstackorg/linkstack:latest'
+    env_file:
+      - stack.env
     environment:
       TZ: 'Europe/Paris'
       SERVER_ADMIN: ${ADMIN_MAIL}
