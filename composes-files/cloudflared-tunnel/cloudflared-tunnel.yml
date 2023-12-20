@@ -9,4 +9,4 @@ services:
     env_file:
       - .env
     environment:
-	- TUNNEL_TOKEN=${TOKEN}
+      - TUNNEL_TOKEN=${TOKEN}
