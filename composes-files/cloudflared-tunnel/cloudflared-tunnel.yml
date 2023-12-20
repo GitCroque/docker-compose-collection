@@ -1,0 +1,12 @@
+version: '2.4'
+services:
+  cloudflared-tunnel:
+    image: cloudflare/cloudflared:latest
+    container_name: cloudflared-tunnel
+    restart: always
+    network_mode: "host"
+    command: --protocol quic tunnel run
+    env_file:
+      - .env
+    environment:
+	- TUNNEL_TOKEN=${TOKEN}
