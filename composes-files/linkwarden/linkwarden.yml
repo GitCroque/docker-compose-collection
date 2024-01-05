@@ -21,4 +21,4 @@ services:
       - postgres
 
 volumes:
-    datalinkwarden:
+  datalinkwarden:
