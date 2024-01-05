@@ -20,5 +20,5 @@ services:
     depends_on:
       - postgres
 
-Volumes:
-  datalink:
+volumes:
+    datalinkwarden:
