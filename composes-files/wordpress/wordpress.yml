@@ -10,17 +10,19 @@ services:
     restart: always
     env_file: .env
     environment:
-      - MYSQL_ROOT_PASSWORD=${DB_ROOT}
-      - MYSQL_DATABASE=${DB_NAME}
-      - MYSQL_USER=${DB_USER}
-      - MYSQL_PASSWORD=${DB_PASSWORD}
+      - MYSQL_ROOT_PASSWORD=${MYSQL_PASSWORD}
+      - MYSQL_DATABASE=${MYSQL_DATABASE}
+      - MYSQL_USER=${MYSQL_USER}
+      - MYSQL_PASSWORD=${MYSQL_PASSWORD}
     expose:
       - 3306
       - 33060
   wordpress:
     image: wordpress:latest
+    volumes:
+      - wp_data:/var/www/html
     ports:
-      - 8023:80
+      - 80:80
     restart: always
     env_file: .env
     environment:
