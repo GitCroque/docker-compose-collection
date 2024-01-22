@@ -22,7 +22,7 @@ services:
     volumes:
       - wp_data:/var/www/html
     ports:
-      - 80:80
+      - 8023:80
     restart: always
     env_file: .env
     environment:
