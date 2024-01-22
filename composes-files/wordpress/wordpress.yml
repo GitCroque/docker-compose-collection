@@ -29,4 +29,4 @@ services:
       - WORDPRESS_DB_NAME=${DB_NAME}
 volumes:
   db_worddata:
-  wp_worddata
+  wp_worddata:
