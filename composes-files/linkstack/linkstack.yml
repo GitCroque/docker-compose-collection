@@ -18,9 +18,9 @@ services:
     volumes:
       - linkstack_data2:/htdocs
     ports:
-      - 8190:443
+      - 8195:443
     restart: unless-stopped
 
 volumes:
-  linkstack_data2:
+  linkstack_disk:
 
