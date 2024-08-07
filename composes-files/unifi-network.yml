@@ -1,4 +1,4 @@
----
+version: '2.0'
 services:
   unifi-network-application:
     image: lscr.io/linuxserver/unifi-network-application:latest
@@ -28,7 +28,7 @@ services:
       - 5514:5514/udp #optional
     restart: unless-stopped
 
- unifi-db:
+  unifi-db:
     image: docker.io/mongo:latest
     container_name:${DB_HOST}
     volumes:
