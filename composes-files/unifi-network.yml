@@ -14,8 +14,6 @@ services:
       - MONGO_DBNAME=${DB_NAME}
       - MEM_LIMIT=1024 #optional
       - MEM_STARTUP=1024 #optional
-      - MONGO_TLS= #optional
-      - MONGO_AUTHSOURCE= #optional
     volumes:
       - conf-unifi:/config
     ports:
