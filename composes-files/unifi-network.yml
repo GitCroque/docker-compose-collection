@@ -30,7 +30,7 @@ services:
 
   unifi-db:
     image: docker.io/mongo:latest
-    container_name:${DB_HOST}
+    container_name=${DB_HOST}
     volumes:
       - conf-data:/data/db
       - conf-mongo:/docker-entrypoint-initdb.d/init-mongo.js:ro
