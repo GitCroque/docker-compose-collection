@@ -17,7 +17,7 @@ services:
       - MONGO_TLS= #optional
       - MONGO_AUTHSOURCE= #optional
     volumes:
-      - config:/config
+      - conf-unifi:/config
     ports:
       - 8443:8443
       - 3478:3478/udp
